@@ -29,7 +29,7 @@ public class EntendendoRelacionamento {
 //		homem[0].querSexo();
 
 		
-		Casamento casal1 = new Casamento(); 
+		Casamento casal1 = new Casamento();
 		casal1.rolaSexo(mulher[0], homem[0]);
 
 	}

@@ -8,7 +8,6 @@ public class ClasseDasMulheres {
 	private ClasseDosFilhos filhosEmCasa; //Agregação de filho para ser utilizado no construtor da ClasseDasMulheres
 	private static boolean bebeDrinks;
 
-	
 	public ClasseDasMulheres(boolean estaDeTpm, boolean filhosEmCasa, boolean bebeDrinks) {
 		super();
 		estaDeTpm = estaDeTpm;
