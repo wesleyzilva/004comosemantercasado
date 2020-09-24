@@ -4,7 +4,7 @@ public class ClasseDasMulheres {
 
 	private String estadoCivil;
 	private int idade;
-	private static boolean estaDeTpm;
+	private static boolean estaDeTpm = true;
 	private ClasseDosFilhos filhosEmCasa; //Agregação de filho para ser utilizado no construtor da ClasseDasMulheres
 	private static boolean bebeDrinks;
 
@@ -14,6 +14,7 @@ public class ClasseDasMulheres {
 		estaDeTpm = estaDeTpm;
 		this.filhosEmCasa = filhosEmCasa;
 		bebeDrinks = bebeDrinks;
+		System.out.println("LOG ClasseDasMulheres| estaDeTpm"+estaDeTpm+"filhosEmCasa"+filhosEmCasa+" bebeDrinks"+bebeDrinks);
 	}
 
 	public static boolean isEstaDeTpm() {

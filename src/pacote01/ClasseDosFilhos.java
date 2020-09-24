@@ -2,7 +2,7 @@ package pacote01;
 
 public class ClasseDosFilhos {
 
-	private static boolean emCasa = true;
+	private static boolean emCasa;
 
 	public ClasseDosFilhos(boolean emCasa) {
 		super();
@@ -13,7 +13,7 @@ public class ClasseDosFilhos {
 		return emCasa;
 	}
 
-	private void setEmCasa(boolean emCasa) {
+	static void setEmCasa(boolean emCasa) {
 		ClasseDosFilhos.emCasa = emCasa;
 	}
 }

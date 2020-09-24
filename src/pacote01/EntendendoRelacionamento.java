@@ -3,9 +3,12 @@ package pacote01;
 public class EntendendoRelacionamento {
 
 	public static void main(String[] args) {
-//Criando diferentes situações com as esposas
+
+		ClasseDosFilhos.setEmCasa(false);
+
+		// Criando diferentes situações com as esposas
 		ClasseDasMulheres mulher[] = new ClasseDasMulheres[3];
-//		mulher[0] = new ClasseDasMulheres(true, true, true);
+		mulher[0] = new ClasseDasMulheres(true, true, true);
 //		mulher[1] = new ClasseDasMulheres(false, true, true);
 //		mulher[2] = new ClasseDasMulheres(true, false, true);
 //		mulher[3] = new ClasseDasMulheres(true, true, false);
