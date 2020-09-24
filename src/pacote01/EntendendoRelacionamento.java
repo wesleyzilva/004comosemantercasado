@@ -4,11 +4,16 @@ public class EntendendoRelacionamento {
 
 	public static void main(String[] args) {
 
-		ClasseDosFilhos.setEmCasa(false);
+//		ClasseDosFilhos.setEmCasa(false);
 
 		// Criando diferentes situações com as esposas
 		ClasseDasMulheres mulher[] = new ClasseDasMulheres[3];
-		mulher[0] = new ClasseDasMulheres(true, true, true);
+		/*
+		 * @estaDeTpm
+		 * @filhoEmCasa
+		 * @bebeDrinks
+		 */
+		mulher[0] = new ClasseDasMulheres(false, false, true);
 //		mulher[1] = new ClasseDasMulheres(false, true, true);
 //		mulher[2] = new ClasseDasMulheres(true, false, true);
 //		mulher[3] = new ClasseDasMulheres(true, true, false);
@@ -21,10 +26,11 @@ public class EntendendoRelacionamento {
 		ClasseDosHomens homem[] = new ClasseDosHomens[3];
 		homem[0] = new ClasseDosHomens();
 
-		homem[0].querSexo();
+//		homem[0].querSexo();
 
-		// Casamento casal1 = new Casamento(); casal1.rolaSexo(ClasseDasMulheres
-		// mulher[0], ClasseDosHomens homem[0]);
+		
+		Casamento casal1 = new Casamento(); 
+		casal1.rolaSexo(mulher[0], homem[0]);
 
 	}
 }

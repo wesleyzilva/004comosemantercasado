@@ -9,12 +9,11 @@ public class ClasseDasMulheres {
 	private static boolean bebeDrinks;
 
 	
-	public ClasseDasMulheres(boolean estaDeTpm, ClasseDosFilhos filhosEmCasa, boolean bebeDrinks) {
+	public ClasseDasMulheres(boolean estaDeTpm, boolean filhosEmCasa, boolean bebeDrinks) {
 		super();
 		estaDeTpm = estaDeTpm;
-		this.filhosEmCasa = filhosEmCasa;
 		bebeDrinks = bebeDrinks;
-		System.out.println("LOG ClasseDasMulheres| estaDeTpm"+estaDeTpm+"filhosEmCasa"+filhosEmCasa+" bebeDrinks"+bebeDrinks);
+		filhosEmCasa = ClasseDosFilhos.isEmCasa();
 	}
 
 	public static boolean isEstaDeTpm() {
