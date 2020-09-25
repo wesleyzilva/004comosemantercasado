@@ -1,5 +1,7 @@
 package pacote01;
-
+//CO MER NA DA
+//Objeto é uma instância de uma classe
+//É HP : pilares do POO
 public class EntendendoRelacionamento {
 
 	public static void main(String[] args) {
@@ -72,6 +74,7 @@ public class EntendendoRelacionamento {
 //		ClasseDosHomens.querSexo();
 
 		System.out.println(">>>CASAL1 -rolaSexo");
+		//CASAL1 um novo objeto da classe Casamento
 		Casamento casal1 = new Casamento();
 		casal1.rolaSexo(mulher[0], homem[0]);
 		System.out.println(ClasseDasMulheres.isBebeDrinks());

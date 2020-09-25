@@ -2,10 +2,12 @@ package pacote01;
 
 public class ClasseDasMulheres {
 
+	//Atributo tem que ser Statico
 	private static boolean estaDeTpm;
 	private static boolean bebeDrinks;
-	private static boolean filhosEmCasa; // Agregação de filho para ser utilizado no construtor da ClasseDasMulheres
+	private ClasseDosFilhos emCasa; // Agregação de filho para ser utilizado no construtor da ClasseDasMulheres 
 
+	//Metodo que recebe parametros e executa ações
 	public ClasseDasMulheres(boolean estaDeTpm, boolean bebeDrinks, boolean filhosEmCasa) {
 		System.out.println("Passando pelo construtor da ClasseDasMulheres");
 		setEstaDeTpm(estaDeTpm);
