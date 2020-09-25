@@ -4,10 +4,10 @@
 package pacote01;
 
 public class Casamento {
-
+	//mulher0 e homem0 são instancias da classe usadas para a validação da regra.
 	public void rolaSexo(ClasseDasMulheres mulher0, ClasseDosHomens homen0) {
-		System.out.println("LOG ClasseDasMulheres |estaDeTpm " + ClasseDasMulheres.isEstaDeTpm() + " |filhosEmCasa "
-				+ ClasseDosFilhos.isEmCasa() + " |bebeDrinks " + ClasseDasMulheres.isBebeDrinks());
+		System.out.println("LOG ClasseDasMulheres |estaDeTpm " + mulher0.isEstaDeTpm() + " |bebeDrinks "
+				+ mulher0.isBebeDrinks() + " |isFilhosEmCasa " + mulher0.isFilhosEmCasa());
 		if (mulher0.isEstaDeTpm() == true && ClasseDosFilhos.isEmCasa() == true && mulher0.isBebeDrinks() == false) {
 			System.out.println("Duvidas, mandou mensagem no zap durante o dia?");
 		}

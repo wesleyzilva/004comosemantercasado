@@ -10,7 +10,7 @@ public class ClasseDosHomens {
 
 	static void querSexo() {
 		System.out.println("Homem quer sexo:");
-		System.out.println("LOG ClasseDasMulheres |estaDeTpm " + ClasseDasMulheres.isEstaDeTpm() + " |filhosEmCasa "
+		System.out.println("LOG ClasseDosHomens |estaDeTpm " + ClasseDasMulheres.isEstaDeTpm() + " |filhosEmCasa "
 				+ ClasseDosFilhos.isEmCasa() + " |bebeDrinks " + ClasseDasMulheres.isBebeDrinks());
 		if (ClasseDasMulheres.isEstaDeTpm() == true && ClasseDosFilhos.isEmCasa() == true) {
 			System.out.println("Sem sexo.");

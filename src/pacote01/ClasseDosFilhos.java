@@ -2,10 +2,9 @@ package pacote01;
 
 public class ClasseDosFilhos {
 
-	private static boolean emCasa;
+	private static  boolean emCasa;
 
 	public ClasseDosFilhos(boolean emCasa) {
-		super();
 		this.emCasa = emCasa;
 	}
 
