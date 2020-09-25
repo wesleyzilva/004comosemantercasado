@@ -1,7 +1,10 @@
-package pacote01;
+package relacionamentoentreclasses;
 //CO MER NA DA
 //Objeto é uma instância de uma classe
 //É HP : pilares do POO
+
+//Agregação e uma instancia que "tem uma" instancia.
+//Encapsumaneto usa interfaces
 public class EntendendoRelacionamento {
 
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package pacote01;
+package relacionamentoentreclasses;
 
 public class ClasseDosHomens {
 

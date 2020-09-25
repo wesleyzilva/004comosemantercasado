@@ -1,7 +1,7 @@
 /**
  * 
  */
-package pacote01;
+package relacionamentoentreclasses;
 
 public class Casamento {
 	// mulher0 e homem0 são instancias da classe usadas para a validação da regra.
