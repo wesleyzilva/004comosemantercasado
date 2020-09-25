@@ -8,7 +8,7 @@ public class EntendendoRelacionamento {
 //		System.out.println("ClasseDosFilhos.isEmCasa = "+ClasseDosFilhos.isEmCasa());
 
 		// Criando diferentes situações com as instancias das esposas
-		ClasseDasMulheres mulher[] = new ClasseDasMulheres[3];
+		ClasseDasMulheres mulher[] = new ClasseDasMulheres[6];
 		/*
 		 * @estaDeTpm
 		 * @bebeDrinks
