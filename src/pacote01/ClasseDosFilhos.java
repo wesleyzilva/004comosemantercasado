@@ -5,7 +5,7 @@ public class ClasseDosFilhos {
 	private static  boolean emCasa;
 
 	public ClasseDosFilhos(boolean emCasa) {
-		this.emCasa = emCasa;
+		ClasseDosFilhos.emCasa = emCasa;
 	}
 
 	public static boolean isEmCasa() {
