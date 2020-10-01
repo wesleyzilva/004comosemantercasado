@@ -1,6 +1,8 @@
 package pilarPooEncapsulamento;
 
-public class ClasseDosHomens {
+import pilarPooHeranca.ClasseDasPessoasAbstrata;
+
+public class ClasseDosHomens extends ClasseDasPessoasAbstrata{
 
 //Agregação entre as Classes
 	private ClasseDasMulheres estaDeTpm; // Tensão pós e pré menstrução

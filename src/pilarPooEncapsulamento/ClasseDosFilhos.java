@@ -1,8 +1,9 @@
 package pilarPooEncapsulamento;
 
-import pilarPooHeranca.ClasseDasPessoas;
+//Herança para implementação, pois, herdam e também tem novos métodos.
+import pilarPooHeranca.ClasseDasPessoasAbstrata;
 
-public class ClasseDosFilhos extends ClasseDasPessoas {
+public class ClasseDosFilhos extends ClasseDasPessoasAbstrata {
 
 	private static boolean emCasa;
 
@@ -15,16 +16,16 @@ public class ClasseDosFilhos extends ClasseDasPessoas {
 	}
 
 	public void quemSaoPais() {
+	}
 
+	public void chegaEmCasa() {
+		setEmCasa(true);
 	}
 
 	@Override
 	public String toString() {
-		return "ClasseDosFilhos [getEstadoCcivil()=" + getEstadoCcivil() + ", getNome()=" + getNome() + ", getIdade()="
-				+ getIdade() + ", isSexo()=" + isSexo() + ", toString()=" + super.toString() + ", getClass()="
-				+ getClass() + ", hashCode()=" + hashCode() + "]";
+		return "ClasseDosFilhos [EstadoCivil=" + getEstadoCcivil() + ", Nome=" + getNome() + ", Idade=" + getIdade()
+				+ ", Sexo=" + isSexo() + "]";
 	}
 
-	
-	
 }

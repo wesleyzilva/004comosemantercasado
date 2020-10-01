@@ -1,10 +1,11 @@
 package pilarPooEncapsulamento;
 
-import pilarPooHeranca.ClasseDasPessoas;
+import pilarPooHeranca.ClasseDasPessoasAbstrata;
 
-public class ClasseDasMulheres extends ClasseDasPessoas {
+//Herança para diferença: Herda e acrescenta métodos.
+public class ClasseDasMulheres extends ClasseDasPessoasAbstrata {
 
-	// Atributo tem que ser Statico
+	// Atributo tem que ser estático
 	private static boolean estaDeTpm;
 	private static boolean bebeDrinks;
 	private ClasseDosFilhos emCasa; // Agregação de filho para ser utilizado no construtor da ClasseDasMulheres
@@ -36,7 +37,7 @@ public class ClasseDasMulheres extends ClasseDasPessoas {
 	public void setBebeDrinks(boolean bebeDrinks) {
 		this.bebeDrinks = bebeDrinks;
 	}
-
+//
 	public static boolean isEstaDeTpm() {
 		return estaDeTpm;
 	}

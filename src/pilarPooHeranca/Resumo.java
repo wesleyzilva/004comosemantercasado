@@ -1,6 +1,8 @@
 package pilarPooHeranca;
 
-public class ClasseDasCaracteristicasDePessoas {
+
+
+public class Resumo {
 
 }
 

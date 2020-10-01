@@ -1,6 +1,15 @@
 package pilarPooHeranca;
 
-public class ClasseDasPessoas {
+/*Métodos e classes podem ser abstratas
+ * Classe abstrata não gera objetos, apenas pode ser projenitora.
+ * Método abstrato é declarado mas não implementado na projenitora.
+ * 		Método abstrato é usado em interface ou em Classe abstrata
+ * Classe final não pode ter herança e é estéril (não pode ter filhos)
+ * Metodo final não pode ser sobrescrito (ter especialização)
+*/
+
+public abstract class ClasseDasPessoasAbstrata {
+	// Uma classe abstrata não pode ser instanciada/ter filhos
 
 	private String nome;
 	private int idade;
@@ -45,8 +54,12 @@ public class ClasseDasPessoas {
 				+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
 	}
 
-	private void fazerAniversario() {
+	public final void fazerAniversario() {
+// Método abstrato é declarado mas não implementado na projenitora.
+// Método abstrato é usado em interface ou em Classe abstrata
+// Método final: não pode ser sobrescrito (polimorfismo)
+// @Override
 		this.idade++;
 	}
-	
+
 }
