@@ -2,8 +2,6 @@ package pilarPooEncapsulamento;
 
 public class ClasseDosHomens {
 
-	private String estadoCivil;
-	private int idade;
 //Agregação entre as Classes
 	private ClasseDasMulheres estaDeTpm; // Tensão pós e pré menstrução
 	private ClasseDosFilhos emCasa;

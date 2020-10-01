@@ -1,5 +1,6 @@
 package pilarPooEncapsulamento;
 //CO MER NA DA
+
 //Objeto é uma instância de uma classe
 //É HP : pilares do POO
 
@@ -12,6 +13,14 @@ public class EntendendoRelacionamento {
 //		ClasseDosFilhos.setEmCasa(false);
 //		System.out.println("ClasseDosFilhos.isEmCasa = "+ClasseDosFilhos.isEmCasa());
 
+		// Teste de instanciamento do homem e seus métodos da classe do tipo abstrato
+		// ClasseDosHomens
+		ClasseDosHomens homem[] = new ClasseDosHomens[1];
+		homem[0] = new ClasseDosHomens();
+//		ClasseDosHomens.querSexo();
+
+		ClasseDosFilhos filho = new ClasseDosFilhos();
+
 		// Criando diferentes situações com as instancias das esposas
 		ClasseDasMulheres mulher[] = new ClasseDasMulheres[8];
 		/*
@@ -21,20 +30,35 @@ public class EntendendoRelacionamento {
 		 * 
 		 * @filhoEmCasa
 		 */
-		mulher[0] = new ClasseDasMulheres(false, true, false);
+		mulher[0] = new ClasseDasMulheres(false, true);
+//		mulher[0] = new ClasseDasMulheres(false, true, false);
 		System.out.println("CASAL1 - Retorno do instanciamento da Mulher");
 		System.out.println("|estaDeTpm? " + ClasseDasMulheres.isEstaDeTpm());
 		System.out.println("|bebeDrinks? " + ClasseDasMulheres.isBebeDrinks());
 		System.out.println("|filhosEmCasa? " + ClasseDosFilhos.isEmCasa());
 		System.out.println("-------------------");
 
-//		mulher[1] = new ClasseDasMulheres(true, true, false); //
-//		System.out.println("CASAL2 - Retorno do instanciamento da Mulher");
-//		System.out.println("|estaDeTpm? " + ClasseDasMulheres.isEstaDeTpm());
-//		System.out.println("|bebeDrinks? " + ClasseDasMulheres.isBebeDrinks());
-//		System.out.println("|filhosEmCasa? " + ClasseDosFilhos.isEmCasa());
-//		System.out.println("-------------------");
-//		mulher[2] = new ClasseDasMulheres(true, false, true);
+		System.out.println(">>>CASAL1 -rolaSexo");
+		// CASAL1 um novo objeto da classe Casamento
+		Casamento casal1 = new Casamento();
+		casal1.rolaSexo(mulher[0], homem[0]);
+		System.out.println(ClasseDasMulheres.isBebeDrinks());
+		System.out.println(ClasseDasMulheres.isEstaDeTpm());
+		System.out.println(ClasseDosFilhos.isEmCasa());
+
+		mulher[1] = new ClasseDasMulheres(true, true);
+		// mulher[1] = new ClasseDasMulheres(true, true, false);
+		System.out.println("CASAL2 - Retorno do instanciamento da Mulher");
+		System.out.println("|estaDeTpm? " + ClasseDasMulheres.isEstaDeTpm());
+		System.out.println("|bebeDrinks? " + ClasseDasMulheres.isBebeDrinks());
+		System.out.println("|filhosEmCasa? " + ClasseDosFilhos.isEmCasa());
+		System.out.println("-------------------");
+
+		System.out.println(">>>CASAL2 - rolaSexo");
+		Casamento casal2 = new Casamento();
+		casal2.rolaSexo(mulher[1], homem[0]);
+
+		// mulher[2] = new ClasseDasMulheres(true, false, true);
 //		System.out.println("CASAL3 - Retorno do instanciamento da Mulher");
 //		System.out.println("|estaDeTpm? " + ClasseDasMulheres.isEstaDeTpm());
 //		System.out.println("|bebeDrinks? " + ClasseDasMulheres.isBebeDrinks());
@@ -71,23 +95,6 @@ public class EntendendoRelacionamento {
 //		System.out.println("|filhosEmCasa? " + ClasseDosFilhos.isEmCasa());
 //		System.out.println("-------------------");
 
-		// Teste de instanciamento do homem e seus métodos
-		ClasseDosHomens homem[] = new ClasseDosHomens[1];
-		homem[0] = new ClasseDosHomens();
-//		ClasseDosHomens.querSexo();
-
-		System.out.println(">>>CASAL1 -rolaSexo");
-		//CASAL1 um novo objeto da classe Casamento
-		Casamento casal1 = new Casamento();
-		casal1.rolaSexo(mulher[0], homem[0]);
-		System.out.println(ClasseDasMulheres.isBebeDrinks());
-		System.out.println(ClasseDasMulheres.isEstaDeTpm());
-		System.out.println(ClasseDosFilhos.isEmCasa());
-
-//		System.out.println(">>>CASAL2 - rolaSexo");
-//		Casamento casal2 = new Casamento();
-//		casal2.rolaSexo(mulher[1], homem[0]);
-//
 //		System.out.println(">>>CASAL3 - rolaSexo");
 //		Casamento casal3 = new Casamento();
 //		casal3.rolaSexo(mulher[2], homem[0]);
@@ -111,6 +118,15 @@ public class EntendendoRelacionamento {
 //		System.out.println(">>>CASAL8 - rolaSexo");
 //		Casamento casal8 = new Casamento();
 //		casal8.rolaSexo(mulher[7], homem[0]);
+		
+		System.out.println();
+		System.out.println("-----TESTE DE HERANÇA-----");
+		filho.setNome("Heitor");
+		filho.setEstadoCcivil("S");
+		mulher[0].setNome("Daiana");
+		mulher[1].setIdade(38);
+		System.out.println(filho.toString());
+		System.out.println(mulher[0].toString());
 
 	}
 }

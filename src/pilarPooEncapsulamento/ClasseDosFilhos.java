@@ -1,18 +1,30 @@
 package pilarPooEncapsulamento;
 
-public class ClasseDosFilhos {
+import pilarPooHeranca.ClasseDasPessoas;
 
-	private static  boolean emCasa;
+public class ClasseDosFilhos extends ClasseDasPessoas {
 
-	public ClasseDosFilhos(boolean emCasa) {
-		ClasseDosFilhos.emCasa = emCasa;
-	}
+	private static boolean emCasa;
 
 	public static boolean isEmCasa() {
 		return emCasa;
 	}
 
-	static void setEmCasa(boolean emCasa) {
+	public void setEmCasa(boolean emCasa) {
 		ClasseDosFilhos.emCasa = emCasa;
 	}
+
+	public void quemSaoPais() {
+
+	}
+
+	@Override
+	public String toString() {
+		return "ClasseDosFilhos [getEstadoCcivil()=" + getEstadoCcivil() + ", getNome()=" + getNome() + ", getIdade()="
+				+ getIdade() + ", isSexo()=" + isSexo() + ", toString()=" + super.toString() + ", getClass()="
+				+ getClass() + ", hashCode()=" + hashCode() + "]";
+	}
+
+	
+	
 }
