@@ -1,7 +1,7 @@
 package pilarPooEncapsulamento;
 
 //Herança da diferença
-//Classe estéril, não pode ter filhos.
+//Classe FINAL é estéril, não pode ter filhos.
 public final class ClasseEspecializacaoFilhoNetoFinal extends ClasseDosFilhos {
 
 	private int mesada;
@@ -11,6 +11,11 @@ public final class ClasseEspecializacaoFilhoNetoFinal extends ClasseDosFilhos {
 	// @Override
 	private final void ensinaTecnologia() {
 
+	}
+
+	@Override //Pagar mensalidade do Neto não é a mesma coisa do Filho
+	public void pagarConta() {
+		System.out.println("@overRide da clase DOS NETOS.");
 	}
 
 }
