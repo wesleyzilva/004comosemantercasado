@@ -62,4 +62,6 @@ public abstract class ClasseDasPessoasAbstrata {
 		this.idade++;
 	}
 
+	public void pagarConta() {
+	}
 }

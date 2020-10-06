@@ -28,4 +28,9 @@ public class ClasseDosFilhos extends ClasseDasPessoasAbstrata {
 				+ ", Sexo=" + isSexo() + "]";
 	}
 
+	// Caso o metodo for final na classe mãe o método não poderá ser sobreposto.
+	public void pagarConta() {
+		System.out.println(this.getNome() + " @overRide da clase DOS FILHOS.");
+	}
+
 }

@@ -2,7 +2,7 @@ package pilarPooEncapsulamento;
 
 import pilarPooHeranca.ClasseDasPessoasAbstrata;
 
-public class ClasseDosHomens extends ClasseDasPessoasAbstrata{
+public class ClasseDosHomens extends ClasseDasPessoasAbstrata {
 
 //Agregação entre as Classes
 	private ClasseDasMulheres estaDeTpm; // Tensão pós e pré menstrução
@@ -36,4 +36,7 @@ public class ClasseDosHomens extends ClasseDasPessoasAbstrata{
 	private void querRelaxarComFillhos() {
 	}
 
+	public void pagarConta() {
+		System.out.println("@overRide da clase DOS HOMENS.");
+	}
 }

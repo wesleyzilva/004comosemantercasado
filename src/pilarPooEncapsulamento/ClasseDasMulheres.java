@@ -37,6 +37,7 @@ public class ClasseDasMulheres extends ClasseDasPessoasAbstrata {
 	public void setBebeDrinks(boolean bebeDrinks) {
 		this.bebeDrinks = bebeDrinks;
 	}
+
 //
 	public static boolean isEstaDeTpm() {
 		return estaDeTpm;
@@ -46,4 +47,8 @@ public class ClasseDasMulheres extends ClasseDasPessoasAbstrata {
 		return bebeDrinks;
 	}
 
+	public void pagarConta() {
+		System.out.println("@overRide da clase DAS MULHERES.");
+	}
+	
 }

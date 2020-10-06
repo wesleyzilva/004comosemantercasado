@@ -26,6 +26,9 @@ public class ProgramaMainEntendendoRelacionamento {
 
 		ClasseDosFilhos filho = new ClasseDosFilhos();
 		filho.setEmCasa(true);
+
+		ClasseEspecializacaoFilhoNetoFinal neto = new ClasseEspecializacaoFilhoNetoFinal();
+
 		// Criando diferentes situações com as instancias das esposas
 		ClasseDasMulheres mulher[] = new ClasseDasMulheres[8];
 		/*
@@ -85,7 +88,7 @@ public class ProgramaMainEntendendoRelacionamento {
 		System.out.println("FINAL: Não pode ser sobrescrito e gerar especialização e nem gerar filhos");
 		System.out.println(">>>Classe da especialização dos netos não pode gerar bisnetos e ser sobrescrita");
 		System.out.println("");
-		System.out.println("EXEMPLOS : ");
+		System.out.println("VEJA EXEMPLOS NO CODIGO: ");
 		filho.setNome("Heitor");
 		filho.setEstadoCcivil("S");
 		mulher[0].setNome("Daiana");
@@ -95,10 +98,17 @@ public class ProgramaMainEntendendoRelacionamento {
 		visita.fazerAniversario(); // Herda apenas as caracteristicas de pessoa
 
 		// ClasseDasPessoasAbstrata pessoa = new ClasseDasPessoasAbstrata(); //Classe
-		// abstrata nã pode ser instanciada
+		// abstrata não pode ser instanciada
 
 		System.out.println(filho.toString());
 		System.out.println(mulher[0].toString());
 
+		mulher[0].pagarConta();
+		homem[0].pagarConta();
+		filho.pagarConta();
+		neto.setNome("Nome do neto");
+		neto.pagarConta();
+
+		
 	}
 }
