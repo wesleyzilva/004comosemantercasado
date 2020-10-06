@@ -29,25 +29,27 @@ public class validaExistenciaAnimal {
 		System.out.println("=========Polimorfismo de sobreposição");
 		mamiferoCachorro.abanarRabo();
 		mamiferoCanguru.locomove();
-		System.out.println("==========================Reptil");
+		mamiferoCanguru.alimenta();
+		System.out.println("==========================Características basicas de um Reptil");
 		animalReptil.alimenta();
 		animalReptil.locomove();
 		animalReptil.emiteSom();
 		System.out.println("=========Polimorfismo de sobreposição");
 		reptilCobra.locomove();
 		reptilTartaruga.locomove();
-		System.out.println("==========================Ave");
+		System.out.println("==========================Características basicas de um Ave");
 		animalAve.alimenta();
 		animalAve.locomove();
 		animalAve.emiteSom();
 		animalAve.fazNinho();
 
-		System.out.println("==========================Peixe");
+		System.out.println("==========================Características basicas de um Peixe");
 		animalPeixe.alimenta();
 		animalPeixe.locomove();
 		animalPeixe.emiteSom();
-
-		System.out.println("RESUMO: \n" + "POLIMORFISMO DE SOBREPOSIÇÃO: Usando os mesmos métodos (nomes) e obtendo\n"
+		System.out.println("");
+		System.out.println("RESUMO:");
+		System.out.println("\n" + "POLIMORFISMO DE SOBREPOSIÇÃO: Usando os mesmos métodos (nomes) e obtendo\n"
 				+ "resultados direfenciados para cada objeto. \n" + "CONCEITO: \n"
 				+ "Acontece quando substituimos um método de uma superclasse na sua subclasse usando a mesma\n"
 				+ "assinatura.");

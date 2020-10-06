@@ -1,5 +1,6 @@
 package pilarPooPolimorfismo;
 
+//SUB CLASSE DE ANIMAL (especialização)
 public class Ave extends Animal {
 
 	private String corPena;
