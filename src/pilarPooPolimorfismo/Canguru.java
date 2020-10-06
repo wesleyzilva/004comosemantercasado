@@ -8,6 +8,6 @@ public class Canguru extends Mamifero {
 
 	@Override
 	public void locomove() { // Possui a mesma assinatura do método
-		System.out.println("Pular...");
+		System.out.println("pulando...");
 	}
 }
