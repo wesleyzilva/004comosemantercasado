@@ -1,6 +1,6 @@
 package pilarPooEncapsulamento;
 
-import pilarPooHeranca.ClasseDasPessoasAbstrata;
+import pilarPooHerancaImplementacaoDiferenca.ClasseDasPessoasAbstrata;
 
 //CO MER NA DA
 

@@ -1,4 +1,4 @@
-package pilarPooPolimorfismo;
+package pilarPooPolimorfismoSobreposicaoSobrecarga;
 
 // PREMISSA: Necessário relembrar e entender assinatura de métodos.
 // Poliformismo de sobreposição.

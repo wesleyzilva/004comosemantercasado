@@ -1,7 +1,6 @@
 package pilarPooEncapsulamento;
 
-//Herança para implementação, pois, herdam e também tem novos métodos.
-import pilarPooHeranca.ClasseDasPessoasAbstrata;
+import pilarPooHerancaImplementacaoDiferenca.ClasseDasPessoasAbstrata;
 
 public class ClasseDosFilhos extends ClasseDasPessoasAbstrata {
 

@@ -1,6 +1,6 @@
 package pilarPooEncapsulamento;
 
-import pilarPooHeranca.ClasseDasPessoasAbstrata;
+import pilarPooHerancaImplementacaoDiferenca.ClasseDasPessoasAbstrata;
 
 public class ClasseDosHomens extends ClasseDasPessoasAbstrata {
 

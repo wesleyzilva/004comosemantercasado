@@ -1,4 +1,4 @@
-package pilarPooHeranca;
+package pilarPooHerancaImplementacaoDiferenca;
 
 /*Métodos e classes podem ser abstratas
  * Classe abstrata não gera objetos, apenas pode ser projenitora.
