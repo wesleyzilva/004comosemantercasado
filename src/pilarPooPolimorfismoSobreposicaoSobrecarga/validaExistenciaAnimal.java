@@ -61,8 +61,7 @@ public class validaExistenciaAnimal {
 		System.out.println("\n" + "POLIMORFISMO DE SOBREPOSIÇÃO: Usando os mesmos métodos (nomes) e obtendo\n"
 				+ "resultados direfenciados para cada objeto. \n" + "CONCEITO: \n"
 				+ "Acontece quando substituimos um método de uma superclasse na sua subclasse usando a mesma\n"
-				+ "assinatura.\n"
-				+ "MESMA ASSINATURA EM CLASSES DIFERENTES.");
+				+ "assinatura.\n" + "MESMA ASSINATURA EM CLASSES DIFERENTES.");
 		System.out.println("");
 
 		System.out.println("POLIMORFISMO DE SOBRECARGA: sobrecarga de métodos na mesma classe");
