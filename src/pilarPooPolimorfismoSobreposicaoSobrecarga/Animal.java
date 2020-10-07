@@ -4,7 +4,7 @@ package pilarPooPolimorfismoSobreposicaoSobrecarga;
 // Poliformismo de sobreposição.
 // Polimorfismo de sobrecarga.
 
-//SUPER CLASSE (Generalização)
+//SUPER CLASSE (Generalização) : Compartilha um design comum para as classes de herança
 public abstract class Animal {
 
 	protected float peso;
@@ -17,4 +17,5 @@ public abstract class Animal {
 	public abstract void locomove();
 
 	public abstract void emiteSom();
+	
 }

@@ -10,7 +10,8 @@ public class validaExistenciaAnimal {
 	 */
 	public static void main(String[] args) {
 
-// Animal animal = new Animal(); //Classe abstrata não pode ser objeto
+// Animal animal = new Animal(); 
+// É uma superclasse abstrata que não pode ser objeto.
 
 		Mamifero animalMamifero = new Mamifero();
 		Peixe animalPeixe = new Peixe();
@@ -18,9 +19,11 @@ public class validaExistenciaAnimal {
 		Ave animalAve = new Ave();
 
 		Cobra reptilCobra = new Cobra();
-		Cachorro mamiferoCachorro = new Cachorro();
+		CachorroSobrecarga mamiferoCachorro = new CachorroSobrecarga();
 		Canguru mamiferoCanguru = new Canguru();
 		Tartaruga reptilTartaruga = new Tartaruga();
+
+		LoboSobreposicao lobo = new LoboSobreposicao();
 
 		System.out.println("==========================Características basicas de um Mamífero");
 		animalMamifero.alimenta();
@@ -47,12 +50,24 @@ public class validaExistenciaAnimal {
 		animalPeixe.alimenta();
 		animalPeixe.locomove();
 		animalPeixe.emiteSom();
+		// SOBREPOSIÇÃO
+		System.out.println("");
+		System.out.println("SOBREPOSIÇÃO");
+		lobo.emiteSom();
+		mamiferoCachorro.emiteSom();
+
 		System.out.println("");
 		System.out.println("RESUMO:");
 		System.out.println("\n" + "POLIMORFISMO DE SOBREPOSIÇÃO: Usando os mesmos métodos (nomes) e obtendo\n"
 				+ "resultados direfenciados para cada objeto. \n" + "CONCEITO: \n"
 				+ "Acontece quando substituimos um método de uma superclasse na sua subclasse usando a mesma\n"
-				+ "assinatura.");
+				+ "assinatura.\n"
+				+ "MESMA ASSINATURA EM CLASSES DIFERENTES.");
+		System.out.println("");
+
+		System.out.println("POLIMORFISMO DE SOBRECARGA: sobrecarga de métodos na mesma classe");
+		CachorroSobrecarga.reagir(true);
+		CachorroSobrecarga.reagir("T");
 	}
 
 }

@@ -12,7 +12,7 @@ public class Mamifero extends Animal {
 
 	private String corPelo;
 
-	@Override //
+	@Override //Sobreposição
 	public void alimenta() {
 		System.out.println("mamando...");
 	}
@@ -22,8 +22,9 @@ public class Mamifero extends Animal {
 		System.out.println("correndo...");
 	}
 
-	@Override
+	@Override //Sobreposição
 	public void emiteSom() {
 		System.out.println("som de mamífero...");
 	}
+
 }
