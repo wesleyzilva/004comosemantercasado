@@ -1,5 +1,9 @@
 package pilarPooPolimorfismoSobreposicaoSobrecarga;
 
+/*
+ * Herança de uma classe é baseada na definição de uma superclasse
+ * e estabelece um relacionamento "é um" entre as classes
+ */
 public class Reptil extends Animal {
 
 	private String corEscama;

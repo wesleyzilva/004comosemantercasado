@@ -11,11 +11,12 @@ public abstract class Animal {
 	protected int idade;
 	protected int membros;
 
-	// Quando tem método abstrato, sou obrigado á desenvolve-lo.
+	// Quando tem método abstrato, sou obrigado á implementa-lo, pois, não está
+	// implementado.
 	public abstract void alimenta();
 
 	public abstract void locomove();
 
 	public abstract void emiteSom();
-	
+
 }

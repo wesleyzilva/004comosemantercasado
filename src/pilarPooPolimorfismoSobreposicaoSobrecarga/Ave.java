@@ -3,7 +3,7 @@ package pilarPooPolimorfismoSobreposicaoSobrecarga;
 //SUB CLASSE DE ANIMAL (especialização)
 public class Ave extends Animal {
 
-	private String corPena;
+	protected String corPena;
 
 	public String getCorPena() {
 		return corPena;
